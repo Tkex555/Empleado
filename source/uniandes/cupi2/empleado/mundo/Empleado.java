@@ -1,6 +1,6 @@
 /**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogotá - Colombia)
- * Departamento de Ingeniería de Sistemas y Computación 
+ * Universidad de los Andes (Bogotï¿½ - Colombia)
+ * Departamento de Ingenierï¿½a de Sistemas y Computaciï¿½n 
  * Licenciado bajo el esquema Academic Free License version 2.1 
  *
  * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
@@ -12,6 +12,7 @@ package uniandes.cupi2.empleado.mundo;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.text.DecimalFormat;
 
 /**
  * Clase que representa un empleado.
@@ -34,8 +35,8 @@ public class Empleado
 
     /**
      * Genero del empleado. <br>
-     * 1 indica género masculino. <br>
-     * 2 indica género femenino. <br>
+     * 1 indica gï¿½nero masculino. <br>
+     * 2 indica gï¿½nero femenino. <br>
      */
     private int genero;
 
@@ -45,7 +46,7 @@ public class Empleado
     private Fecha fechaNacimiento;
 
     /**
-     * Fecha de ingreso del empleado a la compañía.
+     * Fecha de ingreso del empleado a la compaï¿½ï¿½a.
      */
     private Fecha fechaIngreso;
 
@@ -60,13 +61,13 @@ public class Empleado
     private double salario;
 
     // -----------------------------------------------------------------
-    // Métodos
+    // Mï¿½todos
     // -----------------------------------------------------------------
 
     /**
      * Construye el empleado. <br>
-     * <b>post: </b> Se creó el empleado con los siguientes valores: <br>
-     * Nombre: Pedro, Apellido: Matallana, Género: masculino (1), Fecha de nacimiento: 16-6-1982, Fecha de ingreso: 5-4-2000, Imagen: empleado1.png, Salario: 1500000.
+     * <b>post: </b> Se creï¿½ el empleado con los siguientes valores: <br>
+     * Nombre: Pedro, Apellido: Matallana, Gï¿½nero: masculino (1), Fecha de nacimiento: 16-6-1982, Fecha de ingreso: 5-4-2000, Imagen: empleado1.png, Salario: 1500000.
      */
     public Empleado( )
     {
@@ -145,8 +146,8 @@ public class Empleado
     }
 
     /**
-     * Retorna la edad del empleado en años.
-     * @return Edad del empleado en años.
+     * Retorna la edad del empleado en aï¿½os.
+     * @return Edad del empleado en aï¿½os.
      */
     public int calcularEdad( )
     {
@@ -158,8 +159,8 @@ public class Empleado
     }
 
     /**
-     * Retorna la antigüedad del empleado en años.
-     * @return Antigüedad del empleado en años.
+     * Retorna la antigï¿½edad del empleado en aï¿½os.
+     * @return Antigï¿½edad del empleado en aï¿½os.
      */
     public int calcularAntiguedad( )
     {
@@ -170,8 +171,8 @@ public class Empleado
     }
 
     /**
-     * Retorna las prestaciones del empleado usando la fórmula: p = (a * s)/12 (p: prestaciones, a: antigüedad, s: salario). <br>
-     * La antigüedad que se utiliza está dada en años, así que si un empleado lleva menos de un año en la empresa, sus prestaciones serán 0.
+     * Retorna las prestaciones del empleado usando la fï¿½rmula: p = (a * s)/12 (p: prestaciones, a: antigï¿½edad, s: salario). <br>
+     * La antigï¿½edad que se utiliza estï¿½ dada en aï¿½os, asï¿½ que si un empleado lleva menos de un aï¿½o en la empresa, sus prestaciones serï¿½n 0.
      * @return Prestaciones del empleado.
      */
     public double calcularPrestaciones( )
@@ -182,11 +183,11 @@ public class Empleado
     }
 
     /**
-     * Cambia la información del empleado con los valores dados por parámetro. <br>
-     * <b> post: </b> El nombre, apellido, género, fecha de nacimiento, fecha de ingreso, salario e imagen fueron cambiados con los valores dados por parámetro.
+     * Cambia la informaciï¿½n del empleado con los valores dados por parï¿½metro. <br>
+     * <b> post: </b> El nombre, apellido, gï¿½nero, fecha de nacimiento, fecha de ingreso, salario e imagen fueron cambiados con los valores dados por parï¿½metro.
      * @param pNombre Nombre del empleado. pNombre != null && pNombre != "".
      * @param pApellido Apellido del empleado. pApellido != null && pApellido != "".
-     * @param pGenero Género del empleado. pGenero == 1 || pGenero == 0.
+     * @param pGenero Gï¿½nero del empleado. pGenero == 1 || pGenero == 0.
      * @param pFechaNacimiento Fecha de nacimiento del empleado. pFechaNacimiento != null.
      * @param pFechaIngreso Fecha de ingreso del empleado. pFechaIngreso != null.
      * @param pSalario Salario del empleado. pSalario > 0.
@@ -204,8 +205,8 @@ public class Empleado
     }
 
     /**
-     * Cambia el salario del empleado con el valor dado por parámetro. <br>
-     * <b>post: </b> El salario tiene el valor ingresado por parámetro.
+     * Cambia el salario del empleado con el valor dado por parï¿½metro. <br>
+     * <b>post: </b> El salario tiene el valor ingresado por parï¿½metro.
      * @param pSalario Nuevo salario del empleado. pSalario > 0.
      */
     public void cambiarSalario( double pSalario )
@@ -231,11 +232,11 @@ public class Empleado
     }
 
     // -----------------------------------------------------------------
-    // Puntos de Extensión
+    // Puntos de Extensiï¿½n
     // -----------------------------------------------------------------
 
     /**
-     * Método para la extensión 1.
+     * Mï¿½todo para la extensiï¿½n 1.
      * @return Respuesta 1.
      */
     public String metodo1( )
@@ -244,12 +245,19 @@ public class Empleado
     }
 
     /**
-     * Método para la extensión 2.
-     * @return Respuesta 2.
+     * Mï¿½todo para la extensiï¿½n 2.
+     * @return Respuesta con el nombre completo, edad y salario del empleado.
      */
     public String metodo2( )
     {
-        return "Respuesta 2";
+        String nombreCompleto = nombre + " " + apellido;
+        int edad = calcularEdad();
+        DecimalFormat df = new DecimalFormat("$###,###.##");
+        String salarioFormateado = df.format(salario);
+        
+        return "Nombre completo: " + nombreCompleto + "\n" +
+               "Edad: " + edad + " aÃ±os\n" + 
+               "Salario: " + salarioFormateado;
     }
 
 }
