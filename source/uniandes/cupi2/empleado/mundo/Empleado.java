@@ -264,7 +264,7 @@ public class Empleado
         String salarioFormateado = df.format(salario);
         
         return "Nombre Completo: " + nombreCompleto + "\n" +
-               "Edad: " + edad + " Anos" + "\n" +
+               "Edad: " + edad + " años" + "\n" +
                "Salario: " + salarioFormateado;
     }
 
