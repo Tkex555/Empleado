@@ -244,11 +244,11 @@ public class Empleado
         int edad = calcularEdad();
         if(edad >= 18)
         {
-            return "El empleado " + nombre + " " + apellido + " es mayor de edad (" + edad + " aÃ±os)";
+            return "El empleado " + nombre + " " + apellido + " es mayor de edad (" + edad + " años)";
         }
         else
         {
-            return "El empleado " + nombre + " " + apellido + " es menor de edad (" + edad + " aÃ±os)";
+            return "El empleado " + nombre + " " + apellido + " es menor de edad (" + edad + " años)";
         }
     }
 
