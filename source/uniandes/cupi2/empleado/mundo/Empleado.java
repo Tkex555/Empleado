@@ -246,7 +246,10 @@ public class Empleado
         {
             return "El empleado " + nombre + " " + apellido + " es mayor de edad (" + edad + " años)";
         }
-        
+        else
+        {
+            return "El empleado " + nombre + " " + apellido + " es menor de edad (" + edad + " años)";
+        }
     }
 
     /**
