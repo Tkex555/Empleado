@@ -141,7 +141,7 @@ public class PanelDatos extends JPanel implements ActionListener
         principal = pPrincipal;
 
         setLayout( new BorderLayout( ) );
-        setBorder( new CompoundBorder( new EmptyBorder( 0, 0, 5, 0 ), new TitledBorder( "Datos" ) ) );
+        setBorder( new CompoundBorder( new EmptyBorder( 0, 0, -5, 0 ), new TitledBorder( "Datos" ) ) );
 
         lblNombre = new JLabel( "Nombre: " );
         lblApellido = new JLabel( "Apellido: " );
