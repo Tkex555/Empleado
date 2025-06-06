@@ -237,11 +237,16 @@ public class Empleado
 
     /**
      * M�todo para la extensi�n 1.
-     * @return Respuesta 1.
+     * @return Respuesta indicando si el empleado es mayor o menor de edad.
      */
-    public String metodo1( )
+    public String metodo1()
     {
-        return "Respuesta 1";
+        int edad = calcularEdad();
+        if(edad >= 18)
+        {
+            return "El empleado " + nombre + " " + apellido + " es mayor de edad (" + edad + " años)";
+        }
+        
     }
 
     /**
