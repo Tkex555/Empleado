@@ -255,8 +255,8 @@ public class Empleado
         DecimalFormat df = new DecimalFormat("$###,###.##");
         String salarioFormateado = df.format(salario);
         
-        return "Nombre completo: " + nombreCompleto + "\n" +
-               "Edad: " + edad + " años\n" + 
+        return "Nombre Completo: " + nombreCompleto + "\n" +
+               "Edad: " + edad + " Anos" + "\n" +
                "Salario: " + salarioFormateado;
     }
 
